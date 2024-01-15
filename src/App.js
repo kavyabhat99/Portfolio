@@ -35,6 +35,10 @@ function App() {
       <Router >
         <Navbar />
         <Body>
+        <div class="switch">
+  <input type="checkbox" id="toggleAll" onClick={()=>{setDarkMode(!darkMode)}}/>
+  <label for="toggleAll"></label>
+</div>
           <HeroSection />
           <Wrapper>
             <Skills />
